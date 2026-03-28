@@ -11,12 +11,14 @@ Extensive experiments on standard benchmarks demonstrate that UncertaintyCoOp ac
 
 **Motivation**
 
+Illustration of incorrect and missing annotations in VOC and COCO datasets. Each example (a-d) compares the dataset ground truth (GT) with the actual image content (Actual). ✓ and × denote present and absent labels, respectively. Incorrect and missing annotations are highlighted in dark blue and gray dashed boxes, respectively.
+
 ![Framework](assets/Motivation_left_tag.png)
 
-Illustration of incorrect and missing annotations in VOC and COCO datasets. Each example (a-d) compares the dataset ground truth (GT) with the actual image content (Actual). ✓ and × denote present and absent labels, respectively. Incorrect and missing annotations are highlighted in dark blue and gray dashed boxes, respectively.
 
 **Framework**
 
+Illustration of the proposed UncertaintyCoOp framework for partial-label MLR. For each category, a positive prompt, an uncertainty prompt, and a learnable negative embedding interact with image patch features to produce three directional predictions. The entropy-confidence uncertainty estimator generates an uncertainty coefficient, which adaptively fuses the multi-branch predictions and further guides the uncertainty-aware loss function with a reliability teacher distribution.
+
 ![Framework](assets/framework_final.png)
 
-Illustration of the proposed UncertaintyCoOp framework for partial-label MLR. For each category, a positive prompt, an uncertainty prompt, and a learnable negative embedding interact with image patch features to produce three directional predictions. The entropy-confidence uncertainty estimator generates an uncertainty coefficient, which adaptively fuses the multi-branch predictions and further guides the uncertainty-aware loss function with a reliability teacher distribution.
