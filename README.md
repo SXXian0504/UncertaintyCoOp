@@ -1,6 +1,6 @@
 # UncertaintyCoOp: Uncertainty-Aware Prompt Learning for Multi-Label Recognition with Incomplete Annotations
 
-[English](README_EN.md) | [中文](README_CN.md)
+[English](README.md) | [中文](README_CN.md)
 
 The paper has been accepted.
 
