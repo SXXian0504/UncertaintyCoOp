@@ -39,11 +39,13 @@ Follow the instructions at https://github.com/KaiyangZhou/Dassl.pytorch to confi
 
 ### 3. Verify CUDA and Dassl availability
 
-```bash
 # Check Dassl
+```bash
 python -c "import importlib.util; print('Dassl installed:', importlib.util.find_spec('dassl') is not None)"
+```
 
 # Check CUDA
+```
 python -c "import torch; print('PyTorch version:', torch.__version__); print('CUDA available:', torch.cuda.is_available()); print('Device count:', torch.cuda.device_count()); print('Device name:', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'No GPU detected')"
 ```
 
