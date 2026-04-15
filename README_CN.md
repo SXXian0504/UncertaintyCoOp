@@ -40,12 +40,12 @@ conda activate uncertaintycoop
 
 ### 3. 检验CUDA和Dassl的可用性
 
-# 检查 Dassl
+#### 检查 Dassl
 ```bash
 python -c "import importlib.util; print('Dassl installed:', importlib.util.find_spec('dassl') is not None)"
 ```
 
-# 检查 CUDA
+#### 检查 CUDA
 ```
 python -c "import torch; print('PyTorch version:', torch.__version__); print('CUDA available:', torch.cuda.is_available()); print('Device count:', torch.cuda.device_count()); print('Device name:', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'No GPU detected')"
 ```
